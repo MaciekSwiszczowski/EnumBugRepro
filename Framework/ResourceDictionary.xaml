@@ -1,0 +1,11 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Framework">
+
+    <!--<DataTemplate DataType="{x:Type local:ViewModel}" />-->
+    <DataTemplate DataType="{x:Type local:ViewModel}" x:Key="{x:Static local:ResourceKeys.AKey}" />
+
+    <DataTemplate x:Key="{x:Static local:ResourceKeys.TheOtherKey}" />
+    <DataTemplate DataType="{x:Type local:TheOtherViewModel}" x:Key="TheOtherKey" />
+
+</ResourceDictionary>
