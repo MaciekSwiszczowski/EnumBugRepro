@@ -2,6 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:core="clr-namespace:Core">
 
+    <!--
+    Uncomment the next line to get:
+    ArgumentException: Item has already been added. Key in dictionary: 'DataTemplateKey(Framework.ViewModel)'  Key being added: 'DataTemplateKey(Framework.ViewModel)'
+    -->
     <!--<DataTemplate DataType="{x:Type core:ViewModel}" />-->
     <DataTemplate DataType="{x:Type core:ViewModel}" x:Key="{x:Static core:ResourceKeys.AKey}" />
 
